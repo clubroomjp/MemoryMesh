@@ -1,0 +1,37 @@
+{
+  "name": "add_scene",
+  "description": "ナレッジグラフに新しいシーンを追加します",
+  "properties": {
+    "scenes": {
+      "type": "array",
+      "description": "シーンの配列",
+      "items": {
+        "type": "object",
+        "description": "シーン",
+        "properties": {
+          "sceneName": {
+            "type": "string",
+            "description": "シーンの名前",
+            "required": true
+          },
+          "characters": {
+            "type": "array",
+            "description": "登場人物",
+            "items": {
+              "type": "string"
+            },
+            "required": true
+          },
+          "summary": {
+            "type": "string",
+            "description": "あらすじ本文",
+            "required": true
+          }
+        },
+        "required": ["sceneName", "characters", "summary"]
+      }
+    }
+  },
+  "required": ["scenes"],
+  "additionalProperties": true
+}
