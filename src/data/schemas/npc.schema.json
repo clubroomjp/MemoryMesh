@@ -1,98 +1,98 @@
 {
   "name": "add_npc",
-  "description": "Add a new Non-Player Character (NPC) to the knowledge graph",
+  "description": "ナレッジグラフに新しいノンプレイヤーキャラクター（NPC）を追加します",
   "properties": {
     "name": {
       "type": "string",
-      "description": "NPC's name",
+      "description": "NPCの名前",
       "required": true
     },
     "role": {
       "type": "string",
-      "description": "NPC's role or occupation",
+      "description": "NPCの役割または職業",
       "required": true
     },
     "status": {
       "type": "string",
-      "description": "NPC's current status",
+      "description": "NPCの現在のステータス",
       "required": true
     },
     "currentLocation": {
       "type": "string",
-      "description": "The current location of the NPC",
+      "description": "NPCの現在の場所",
       "required": true,
       "relationship": {
         "edgeType": "located_in",
-        "description": "The current location of the NPC"
+        "description": "NPCの現在の場所"
       }
     },
     "description": {
       "type": "string",
-      "description": "A detailed description of the NPC",
+      "description": "NPCの詳細な説明",
       "required": true
     },
     "gender": {
       "type": "string",
-      "description": "NPC's gender",
+      "description": "NPCの性別",
       "required": false
     },
     "race": {
       "type": "string",
-      "description": "NPC's race",
+      "description": "NPCの種族",
       "required": false
     },
     "background": {
       "type": "string",
-      "description": "The background story of the NPC",
+      "description": "NPCの生い立ち",
       "required": false
     },
     "secret": {
       "type": "string",
-      "description": "A hidden detail about the NPC",
+      "description": "NPCに関する隠された詳細",
       "required": false
     },
     "origin": {
       "type": "string",
-      "description": "The origin or home location of the NPC",
+      "description": "NPCの出身地または故郷",
       "required": false,
       "relationship": {
         "edgeType": "originates_from",
-        "description": "The origin location of the NPC"
+        "description": "NPCの出身地"
       }
     },
     "traits": {
       "type": "array",
-      "description": "Unique traits or characteristics of the NPC",
+      "description": "NPCのユニークな特性または特徴",
       "required": false
     },
     "abilities": {
       "type": "array",
-      "description": "Specific skills or powers the NPC possesses",
+      "description": "NPCが持つ特定のスキルまたは能力",
       "required": false
     },
     "importance": {
       "type": "string",
-      "description": "The importance of the NPC in the story or world",
+      "description": "物語または世界におけるNPCの重要度",
       "required": false
     },
     "reputation": {
       "type": "string",
-      "description": "How the NPC is perceived by others",
+      "description": "NPCが他者からどのように認識されているか",
       "required": false
     },
     "money": {
       "type": "string",
-      "description": "Currency or wealth the NPC holds",
+      "description": "NPCが保有する通貨または富",
       "required": false
     },
     "alignment": {
       "type": "string",
-      "description": "The ethical or moral alignment of the NPC",
+      "description": "NPCの倫理的または道徳的な属性",
       "required": false
     },
     "motivation": {
       "type": "string",
-      "description": "The driving purpose or goals of the NPC",
+      "description": "NPCの原動力または目標",
       "required": false
     }
   },

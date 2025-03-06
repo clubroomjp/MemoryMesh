@@ -1,19 +1,19 @@
 {
   "name": "add_skills",
-  "description": "Defines list of skills or abilities a character can possess.",
+  "description": "キャラクターが持つことができるスキルまたは能力のリストを定義します",
   "properties": {
     "name": {
       "type": "string",
-      "description": "[Entity]_abilities",
+      "description": "[エンティティ]_アビリティ",
       "required": true
     },
     "owner": {
       "type": "string",
-      "description": "The entity or character that owns these skills.",
+      "description": "これらのスキルを所有するエンティティまたはキャラクター",
       "required": true,
       "relationship": {
         "edgeType": "possesses",
-        "description": "The relationship between the skill and its owner."
+        "description": "スキルとその所有者の間の関係"
       }
     }
   },

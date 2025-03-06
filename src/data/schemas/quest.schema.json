@@ -1,30 +1,26 @@
 {
   "name": "add_quest",
-  "description": "Add a new Quest to the knowledge graph",
+  "description": "ナレッジグラフに新しいクエストを追加します",
   "properties": {
     "name": {
       "type": "string",
-      "description": "Quest's name",
+      "description": "クエストの名前",
       "required": true
     },
     "description": {
       "type": "string",
-      "description": "Detailed description of the quest",
+      "description": "クエストの詳細な説明",
       "required": true
     },
     "status": {
       "type": "string",
-      "description": "Current status of the quest",
+      "description": "クエストの現在のステータス",
       "required": true,
-      "enum": [
-        "Active",
-        "Completed",
-        "Failed"
-      ]
+      "enum": ["Active", "Completed", "Failed"]
     },
     "objectives": {
       "type": "array",
-      "description": "List of objectives to complete the quest",
+      "description": "クエストを完了するための目的のリスト",
       "required": true,
       "items": {
         "type": "string"
@@ -32,7 +28,7 @@
     },
     "rewards": {
       "type": "array",
-      "description": "List of rewards for completing the quest",
+      "description": "クエスト完了の報酬リスト",
       "required": true,
       "items": {
         "type": "string"
@@ -40,7 +36,7 @@
     },
     "relatedCharacters": {
       "type": "array",
-      "description": "List of player characters assigned to the quest",
+      "description": "クエストに割り当てられたプレイヤーキャラクターのリスト",
       "required": false,
       "items": {
         "type": "string"
@@ -48,7 +44,7 @@
     },
     "relatedNPCs": {
       "type": "array",
-      "description": "List of NPCs involved in the quest",
+      "description": "クエストに関与するNPCのリスト",
       "required": false,
       "items": {
         "type": "string"
@@ -56,7 +52,7 @@
     },
     "relatedLocations": {
       "type": "array",
-      "description": "List of locations associated with the quest",
+      "description": "クエストに関連する場所のリスト",
       "required": false,
       "items": {
         "type": "string"

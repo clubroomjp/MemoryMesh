@@ -1,25 +1,25 @@
 {
   "name": "add_temporal",
-  "description": "Represents a specific point in time and its associated environmental conditions.",
+  "description": "特定の時点とそれに関連する環境条件を表します",
   "properties": {
     "time": {
       "type": "string",
-      "description": "The specific time.",
+      "description": "特定の時間",
       "required": false
     },
     "day": {
       "type": "string",
-      "description": "The current day.",
+      "description": "現在の日",
       "required": false
     },
     "year": {
       "type": "string",
-      "description": "The current year or point in the timeline.",
+      "description": "現在の年またはタイムライン上の時点",
       "required": false
     },
     "weather": {
       "type": "string",
-      "description": "The current weather or environmental conditions.",
+      "description": "現在の天気または環境条件",
       "required": false
     }
   },

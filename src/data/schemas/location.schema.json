@@ -1,91 +1,91 @@
 {
   "name": "add_location",
-  "description": "Add a new location to the knowledge graph",
+  "description": "ナレッジグラフに新しい場所を追加します",
   "properties": {
     "name": {
       "type": "string",
-      "description": "Location's name",
+      "description": "場所の名前",
       "required": true
     },
     "type": {
       "type": "string",
-      "description": "Type of location",
+      "description": "場所の種類",
       "required": true
     },
     "description": {
       "type": "string",
-      "description": "Detailed description of the location",
+      "description": "場所の詳細な説明",
       "required": true
     },
     "status": {
       "type": "string",
-      "description": "Current state of the location",
+      "description": "場所の現在の状態",
       "required": true
     },
     "parentLocation": {
       "type": "string",
-      "description": "The parent location this location belongs to",
+      "description": "この場所が属する親の場所",
       "required": false
     },
     "atmosphere": {
       "type": "string",
-      "description": "The general feel/mood of the location",
+      "description": "場所の全体的な雰囲気またはムード",
       "required": false
     },
     "accessibility": {
       "type": "string",
-      "description": "How characters can enter/exit the location",
+      "description": "キャラクターが場所へ出入りする方法",
       "required": false
     },
     "size": {
       "type": "string",
-      "description": "The size or scale of the location",
+      "description": "場所の大きさまたは規模",
       "required": false
     },
     "dangerLevel": {
       "type": "string",
-      "description": "The level of danger present in the location",
+      "description": "場所に存在する危険のレベル",
       "required": false
     },
     "notableFeatures": {
       "type": "array",
-      "description": "Distinct characteristics of the location",
+      "description": "場所の際立った特徴",
       "required": false
     },
     "subLocations": {
       "type": "array",
-      "description": "Locations contained within this location",
+      "description": "この場所に含まれる場所",
       "required": false,
       "relationship": {
         "edgeType": "contains",
-        "description": "Locations contained within this location"
+        "description": "この場所に含まれる場所"
       }
     },
     "relatedCharacters": {
       "type": "array",
-      "description": "Characters present in or associated with this location",
+      "description": "この場所に存在するか、関連するキャラクター",
       "required": false,
       "relationship": {
         "edgeType": "present_in",
-        "description": "Characters associated with the location"
+        "description": "場所に関連するキャラクター"
       }
     },
     "relatedQuests": {
       "type": "array",
-      "description": "Quests associated with this location",
+      "description": "この場所に関連するクエスト",
       "required": false,
       "relationship": {
         "edgeType": "takes_place_in",
-        "description": "Quests associated with the location"
+        "description": "場所に関連するクエスト"
       }
     },
     "relatedArtifacts": {
       "type": "array",
-      "description": "Artifacts found or stored at this location",
+      "description": "この場所で発見または保管されているアーティファクト",
       "required": false,
       "relationship": {
         "edgeType": "located_at",
-        "description": "Artifacts associated with the location"
+        "description": "場所に関連するアーティファクト"
       }
     }
   },

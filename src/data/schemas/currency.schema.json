@@ -1,29 +1,29 @@
 {
   "name": "add_currency",
-  "description": "Represents a type of currency in the game world.",
+  "description": "ゲーム世界における通貨の種類を表します",
   "properties": {
     "name": {
       "type": "string",
-      "description": "The name of the currency.",
+      "description": "通貨の名前",
       "required": true
     },
     "description": {
       "type": "string",
-      "description": "A brief description of the currency.",
+      "description": "通貨の簡単な説明",
       "required": false
     },
     "owner": {
       "type": "string",
-      "description": "The entity or character that owns this currency.",
+      "description": "この通貨を所有するエンティティまたはキャラクター",
       "required": true,
       "relationship": {
         "edgeType": "owned_by",
-        "description": "The relationship between the currency and its owner."
+        "description": "通貨とその所有者との関係"
       }
     },
     "quantity": {
       "type": "string",
-      "description": "The amount of this currency owned.",
+      "description": "所有しているこの通貨の量",
       "required": true
     }
   },

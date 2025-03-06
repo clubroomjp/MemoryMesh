@@ -1,67 +1,67 @@
 {
   "name": "add_artifact",
-  "description": "Add a new artifact or unique item to the knowledge graph",
+  "description": "ナレッジグラフに新しいアーティファクトまたはユニークアイテムを追加",
   "properties": {
     "name": {
       "type": "string",
-      "description": "The artifact's name",
+      "description": "アーティファクトの名前",
       "required": true
     },
     "description": {
       "type": "string",
-      "description": "A detailed description of the artifact",
+      "description": "アーティファクトの詳細な説明",
       "required": true
     },
     "type": {
       "type": "string",
-      "description": "The artifact's type",
+      "description": "アーティファクトの種類",
       "required": true
     },
     "rarity": {
       "type": "string",
-      "description": "The rarity of the artifact",
+      "description": "アーティファクトのレアリティ",
       "required": true
     },
     "effects": {
       "type": "array",
-      "description": "The artifact's effects or abilities",
+      "description": "アーティファクトの効果または能力",
       "required": true
     },
     "origin": {
       "type": "string",
-      "description": "The artifact's origin or history",
+      "description": "アーティファクトの起源または歴史",
       "required": false
     },
     "value": {
       "type": "string",
-      "description": "The monetary or intrinsic value of the artifact",
+      "description": "アーティファクトの金銭的または本質的な価値",
       "required": false
     },
     "relatedCharacters": {
       "type": "array",
-      "description": "Characters associated with the artifact",
+      "description": "アーティファクトに関連するキャラクター",
       "required": false,
       "relationship": {
         "edgeType": "owned_by",
-        "description": "Artifact owners"
+        "description": "アーティファクトの所有者"
       }
     },
     "relatedQuests": {
       "type": "array",
-      "description": "Quests involving the artifact",
+      "description": "アーティファクトに関連するクエスト",
       "required": false,
       "relationship": {
         "edgeType": "associated_with",
-        "description": "Artifact-related quests"
+        "description": "アーティファクトに関連するクエスト"
       }
     },
     "relatedLocations": {
       "type": "array",
-      "description": "Locations associated with the artifact",
+      "description": "アーティファクトに関連する場所",
       "required": false,
       "relationship": {
         "edgeType": "found_at",
-        "description": "Artifact locations"
+        "description": "アーティファクトが見つかる場所"
       }
     }
   },

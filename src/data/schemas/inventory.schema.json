@@ -1,24 +1,24 @@
 {
   "name": "add_inventory",
-  "description": "A collection of items or equipment belonging to a character, entity, or location.",
+  "description": "キャラクター、エンティティ、または場所が所有するアイテムや装備のコレクションを表します",
   "properties": {
     "name": {
       "type": "string",
-      "description": "[Entity]_inventory.",
+      "description": "[エンティティ]_インベントリ",
       "required": true
     },
     "owner": {
       "type": "string",
-      "description": "The owner of this inventory.",
+      "description": "このインベントリの所有者",
       "required": true,
       "relationship": {
         "edgeType": "owned_by",
-        "description": "The entity that owns this inventory."
+        "description": "このインベントリを所有するエンティティ"
       }
     },
     "items": {
       "type": "array",
-      "description": "List of items in the inventory.",
+      "description": "インベントリ内のアイテムのリスト",
       "required": true
     }
   },

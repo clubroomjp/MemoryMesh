@@ -1,34 +1,34 @@
 {
   "name": "add_faction",
-  "description": "A faction or organization operating within the game world.",
+  "description": "ゲーム世界内で活動する派閥や組織を表します",
   "properties": {
     "name": {
       "type": "string",
-      "description": "The name of the faction or organization.",
+      "description": "派閥または組織の名前",
       "required": true
     },
     "type": {
       "type": "string",
-      "description": "The type of the faction.",
+      "description": "派閥の種類",
       "required": true
     },
     "description": {
       "type": "string",
-      "description": "A detailed description of the faction.",
+      "description": "派閥の詳細な説明",
       "required": true
     },
     "goals": {
       "type": "array",
-      "description": "The main objectives or goals of the faction.",
+      "description": "派閥の主な目的または目標",
       "required": false
     },
     "leader": {
       "type": "string",
-      "description": "The leader of the faction.",
+      "description": "派閥のリーダー",
       "required": false,
       "relationship": {
         "edgeType": "led_by",
-        "description": "The entity leading this faction."
+        "description": "この派閥を率いるエンティティ"
       }
     }
   },
