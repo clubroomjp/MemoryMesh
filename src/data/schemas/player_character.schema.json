@@ -46,6 +46,14 @@
       "type": "array",
       "description": "プレイヤーキャラクターに関連付けられた装備アイテムのリスト",
       "required": false
+    },
+    "voice": {
+      "type": "array",
+      "description": "プレイヤーキャラクターの口調のサンプル",
+      "items": {
+        "type": "string"
+      },
+      "required": false
     }
   },
   "additionalProperties": true

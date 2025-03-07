@@ -94,6 +94,14 @@
       "type": "string",
       "description": "NPCの原動力または目標",
       "required": false
+    },
+    "voice": {
+      "type": "array",
+      "description": "NPCの口調のサンプル",
+      "items": {
+        "type": "string"
+      },
+      "required": true
     }
   },
   "additionalProperties": true
